@@ -9,3 +9,6 @@ A terminal styled, minimal typecho theme inspired by and based on Terminal CSS
 This is my first typecho theme and I'm not very familiar with frontend and/or theme development.
 If you like the theme, feel free to commit any changes.
 For more info on the Terminal CSS framework visit https://terminalcss.xyz/
+
+# Contact
+https://twitter.com/liagason
