@@ -30,13 +30,6 @@ if (!defined('__TYPECHO_ROOT_DIR__')) exit;
             </div>
 		</article>
 		<footer class="post-header">
-		<ul class="post-meta">
-    				<li><?php _e('Category: '); ?><?php $this->category(','); ?></li>
-                    <li><?php _e('Tags: '); ?><?php $this->tags(', ', true, 'none'); ?></li>
-				<!--
-				<li itemprop="interactionCount"><a itemprop="discussionUrl" href="<?php $this->permalink() ?>#comments"><?php $this->commentsNum('Comment', '1 comment', '%d comments'); ?></a></li>
-				-->
-    			</ul>
           <p class="meta">
 		  <?php _e('Published on '); ?><time datetime="<?php $this->date('c'); ?>" itemprop="datePublished"><?php $this->date(); ?></time><?php _e(' by '); ?><a itemprop="name" href="<?php $this->author->permalink(); ?>" rel="author"><?php $this->author(); ?></a>
           </p>
@@ -45,8 +38,8 @@ if (!defined('__TYPECHO_ROOT_DIR__')) exit;
 	<?php endwhile; ?>
 
     <div class="pagination">
+    	<span class="page-item"><span class="page-link"><?php $this->pageLink('&laquo; Previous'); ?></span></span>
         <span class="page-item"><span class="page-link"><?php $this->pageLink('Next &raquo;','next'); ?></span></span>
-        <span class="page-item"><span class="page-link"><?php $this->pageLink('&laquo; Previous'); ?></span></span>
     </div>
 	<?php //$this->pageNav('&laquo; Previous', 'Next &raquo;'); ?>
 
